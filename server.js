@@ -23,6 +23,20 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/contacts/:id', (request, response) => {
+  database.getOneContact((error, contact) => {
+    if (error) {
+      response.status(500).render('error', {
+        error: error,
+      })
+    } else {
+      response.render('contact', {
+        contact: contact,
+      })
+    }
+  }, request.params.id)
+})
+
 app.use((request, response) => {
   response.status(404).render('not_found')
 })
