@@ -69,7 +69,7 @@ Users of the app have the ability to take the following actions.
 
 - [x] When a user is viewing the list page (`/`), they see all of their contacts.
 - [x] On the list page, a user can see a list of all contacts' names sorted alphabetically by first name.
-- [ ] When a user is viewing the list page (`/`), they can click on individual contacts to go to the corresponding detail page for the contact (`/contacts/:id`).
+- [x] When a user is viewing the list page (`/`), they can click on individual contacts to go to the corresponding detail page for the contact (`/contacts/:id`).
 - [ ] On the contact detail page, a user can see the contact's name, email address, phone number, home address (including: street, city, state, country, and zip code), birthday, and personal website.
 - [ ] When a user is viewing the list page (`/`), they can click on a link to "Add Contact", which takes them to the new contact page (`/contacts/new`).
 - [ ] When a user fills out and submits the new contact form at `/contacts/new`, they are redirected to the "detail" page for the new contact.
