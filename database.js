@@ -15,6 +15,7 @@ const query = (sql, variables, callback) => {
       console.log('QUERY <-', JSON.stringify(result.rows))
       callback(error, result.rows)
     }
+    // return JSON.stringify(result.rows)
   })
 }
 
@@ -26,7 +27,23 @@ const getOneContact = (callback, id) => {
   query('SELECT * FROM contacts WHERE id = $1', [id], callback)
 }
 
+const addNewContact = (callback, contact) => {
+  query('INSERT INTO contacts(name, email, phone, street, city, state, country, zip, birthday, website) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *',
+    [
+      contact.name,
+      contact.email,
+      contact.phone,
+      contact.street,
+      contact.city,
+      contact.state,
+      contact.country,
+      contact.zip,
+      contact.birthday,
+      contact.website
+    ], callback)
+}
 module.exports = {
   getContacts,
-  getOneContact
+  getOneContact,
+  addNewContact
 }
