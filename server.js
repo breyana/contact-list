@@ -23,6 +23,10 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/contacts/new', (request, response) => {
+  response.render('new_contact')
+})
+
 app.get('/contacts/:id', (request, response) => {
   database.getOneContact((error, contact) => {
     if (error) {
@@ -37,6 +41,7 @@ app.get('/contacts/:id', (request, response) => {
   }, request.params.id)
 })
 
+
 app.post('/contacts/new', (request, response) => {
   database.addNewContact((error, contact) => {
     if (error) {
@@ -44,9 +49,7 @@ app.post('/contacts/new', (request, response) => {
         error: error,
       })
     } else {
-      response.status(201).json({
-        contact: contact[0]
-      })
+      response.status(201).redirect('/contacts/' + contact[0].id)
     }
   }, request.body)
 })

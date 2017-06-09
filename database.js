@@ -20,7 +20,7 @@ const query = (sql, variables, callback) => {
 }
 
 const getContacts = (callback) => {
-  query('SELECT * FROM contacts', [], callback)
+  query('SELECT * FROM contacts ORDER BY name', [], callback)
 }
 
 const getOneContact = (callback, id) => {

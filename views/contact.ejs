@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contacts</title>
+  <title>Contacts - <%= contact.name %></title>
   <link rel="stylesheet" type="text/css" href="/style.css">
   <script type="text/javascript" src="/script.js"></script>
 </head>
 <body>
+
+  <%- include('partials/nav') %>
 
   <% contact.forEach(function(contact){ %>
   <h1><%= contact.name %></h1>
@@ -13,6 +15,25 @@
   <div class="contact-list">
       <div>
         <%= contact.name %>
+      </div>
+      <div>
+        <%= contact.email %>
+      </div>
+      <div>
+        <%= contact.phone %>
+      </div>
+      <div>
+        <%= contact.street %>
+        <br>
+        <%= contact.city %>, <%= contact.state %>, <%= contact.zip %>
+        <br>
+        <%= contact.country %>
+      </div>
+      <div>
+        <%= contact.birthday %>
+      </div>
+      <div>
+        <%= contact.website %>
       </div>
   </div>
   <% }) %>
