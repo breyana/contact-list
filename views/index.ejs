@@ -8,15 +8,16 @@
 <body>
 
   <%- include('partials/nav') %>
+  <div>
+    <h1>Contacts</h1>
 
-  <h1>Contacts</h1>
-
-  <div class="contact-list">
-    <% contacts.forEach(function(contact){ %>
-      <div>
-        <a href='/contacts/<%= contact.id %>'><%= contact.name %></a>
-      </div>
-    <% }) %>
+    <div class="contact-list">
+      <% contacts.forEach(function(contact){ %>
+        <div>
+          <a href='/contacts/<%= contact.id %>'><%= contact.name %></a>
+        </div>
+      <% }) %>
+    </div>
   </div>
 
 </body>
