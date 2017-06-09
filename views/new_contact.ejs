@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacts - New Contact</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script type="text/javascript" src="/script.js"></script>
+</head>
+<body>
+
+  <%- include('partials/nav') %>
+
+  <form action="/contacts/new" method="post">
+    <div>
+      <input type="text" name="name" placeholder="name" />
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="email" />
+    </div>
+    <div>
+      <input type="text" name="phone" placeholder="phone" />
+    </div>
+    <div>
+      <input type="text" name="street" placeholder="street" />
+    </div>
+    <div>
+      <input type="text" name="city" placeholder="city" />
+    </div>
+    <div>
+      <input type="text" name="state" placeholder="state" />
+    </div>
+    <div>
+      <input type="text" name="country" placeholder="country" />
+    </div>
+    <div>
+      <input type="text" name="zip" placeholder="zip" />
+    </div>
+    <div>
+      <input type="date" name="birthday" placeholder="birthday" />
+    </div>
+    <div>
+      <input type="url" name="website" placeholder="http://" />
+    </div>
+
+  </form>
+
+</body>
+</html>
