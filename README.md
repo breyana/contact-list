@@ -87,14 +87,14 @@ Users of the app have the ability to take the following actions.
 
 The user interface matches the designs in the [mockups](#mockups).
 
-- [ ] The entire page content should be constrained by a centered page column.
-- [ ] The site header has a link to the homepage.
-- [ ] The site header has a link to the new contact page (`/contacts/new`).
+- [x] The entire page content should be constrained by a centered page column.
+- [x] The site header has a link to the homepage.
+- [x] The site header has a link to the new contact page (`/contacts/new`).
 - [ ] The site header has a a text input that lets you fuzzy search for contacts.
 - [ ] The color of the header, link text, etc. are exactly the same as the colors in the mockups.
-  - Background: `#50E3C2` (teal)
-  - Header, button: `#4990E2` (blue)
-  - Default text: `#4A4A4A` (dark grey)
+  - [x] Background: `#50E3C2` (teal)
+  - [x] Header, button: `#4990E2` (blue)
+  - [x] Default text: `#4A4A4A` (dark grey)
   - Secondary text: `#9B9B9B` (light grey)
   - Link text: `#002653` (dark blue)
   - Delete links: `#D0011B` (red)
@@ -109,17 +109,17 @@ The user interface matches the designs in the [mockups](#mockups).
 
 Use HTML templating to build your web pages and embed dynamic data.
 
-- [ ] The server uses the [EJS templating language][ejs] to build HTML.
-- [ ] Each route that renders HTML uses its own EJS template.
+- [x] The server uses the [EJS templating language][ejs] to build HTML.
+- [x] Each route that renders HTML uses its own EJS template.
 - [ ] Each page template shares the same layout.
   <br/>The means the `<head>` is consistent across all paged and is not duplicated.
-- [ ] Each page template shared the same nav bar.
+- [x] Each page template shared the same nav bar.
   <br/>Each page has the same nav bar but the code is not duplicated and each page template uses the same page header ejs template (eg: `header.ejs`).
 
 #### Browser Interactivity
 
 - [ ] When clicking a link that will delete a contact, a confirmation prompt displays confirming the user wants to delete the contact. Contacts are only deleted if the user "confirms".
-- [ ] When a user attempts to submit the new contact form without a value in the name field, the form is not submitted and a form validation error is displayed at the top of the page in red.
+- [x] When a user attempts to submit the new contact form without a value in the name field, the form is not submitted and a form validation error is displayed at the top of the page in red.
 
 ### Mockups
 
