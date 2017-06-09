@@ -1,5 +1,16 @@
 html, body{
-  margin: 0;
+  background-color: #50E3C2;
+  color: #4A4A4A;
+  font-size: 16px;
+  margin: auto;
   padding: 0;
-  width: 100vw;
+  width: 75%;
+}
+
+div {
+  background-color: #FFFFFF;
+}
+
+nav {
+  background-color: #4990E2;
 }
