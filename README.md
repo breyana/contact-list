@@ -29,16 +29,16 @@ Complete as many of the specs (checkboxes) as you can.
 
 #### General: Code Quality, Git Flow, Etc.
 
-- [ ] Variables, functions, files, CSS classes, etc. have appropriate and meaningful names.
+- [x] Variables, functions, files, CSS classes, etc. have appropriate and meaningful names.
     <br>Avoid generic, vague or too-short names (e.g. `string`, `stuff`, `x`)
-- [ ] HTML, CSS, and JS files are well formatted with consistent spacing and indentation.
+- [x] HTML, CSS, and JS files are well formatted with consistent spacing and indentation.
     <br>At the very least: tags in HTML and brackets in JavaScript are opened/closed on the same indent level; there are line breaks between style definitions in CSS and between function declarations in JavaScript.
-- [ ] Git commit history shows clear progression through different features, with concise and descriptive commit messages.
+- [x] Git commit history shows clear progression through different features, with concise and descriptive commit messages.
     <br>Commit messages should summarize what changes are being introduced.
-- [ ] There are at least two commits per day but ideally a lot more.
+- [x] There are at least two commits per day but ideally a lot more.
     <br>It's OK to commit incomplete/draft code. The important thing is to keep a good pace of development and show how your code evolved toward your solution.
-- [ ] Your artifact (final project) uses the [starter code][starter-code-zip].
-- [ ] Your artifact is published to a GitHub repository.
+- [x] Your artifact (final project) uses the [starter code][starter-code-zip].
+- [x] Your artifact is published to a GitHub repository.
 
 #### Pages and Routes
 
